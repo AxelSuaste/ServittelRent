@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto. Servittel Rent</title>
+    <link rel="shortcut icon" href="../img/LogoPNG.png">
+    <!-- Animadores y css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <!-------Encabezado------->
+    <span id="comienzo"></span>
+    <header class="headerPrincipal">
+        <a href="../index.html" class="logo">
+            <img src="../img/LogoPNG.png" alt="Logo Servittel" class="animate__animated animate__swing">
+            <h1> SERVITTEL RENT</h1>
+        </a>
+        <!-------Accesos rápidos------->
+        <nav class="barraNavegacion">
+            <input type="checkbox" id="menuCheck">
+            <label for="menuCheck" class="menuBoton"></label>
+            <ul class="menuLista">
+                <li class="menuItem">
+                    <a class="menuLink" href="../index.html">Inicio</a>
+                </li>
+                <li class="menuItem">
+                    <a class="menuLink" href="servicios.html">Servicios</a>
+                </li>
+                <li class="menuItem">
+                    <a class="menuLink" href="novedades.html">Novedades</a>
+                </li>
+                <li class="menuItem">
+                    <a class="menuLink" href="sobreNosotros.html">Sobre Nosotros</a>
+                </li>
+                <li class="menuItem">
+                    <a class="menuLink accesoPie" href="#pie">Ir abajo</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-------^Encabezado^------->
+
+    <main>
+        <div class="pagina contacto">
+            <!-------Sección de contacto mayormente explicada------->
+            <h1>Contacto</h1>
+            <!-------Contactos externos a pagina (Wp. fb, ig)------->
+            <h3>Puedes contactarnos por...!</h3>
+            <div class="contenedorRedes">
+                <div class="contactoRedes">
+                    <div>
+                        <a href="https://www.facebook.com/servittelrent" target="blank">
+                            <img src="../img/facebook.png" alt="facebook" id="facebook">
+                            <p>Servittel Rent</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.whatsapp.com/" target="blank">
+                            <img src="../img/whatsapp.png" alt="whatsapp" id="whatsapp">
+                            <p>+52 55 4010 3224</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com/servittel_rent/" target="blank">
+                            <img src="../img/instagram.png" alt="instagram" id="instagram">
+                            <p>@servittel_rent</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-------Contacto dentro de página (Formulario)------->
+            <h3>O escribenos directamente por aqui!</h3>
+            <div class="formulario">
+                <form action="" method="post" enctype="">
+                    <label for="nombre">Nombre(s)</label>
+                    <input type="text" id="nombre" name="nombre" value="" placeholder="Rob Jhon">
+                    <label for="apellido">Apellidos</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Hernandez Gutierrez">
+                    <label for="mail">Correo electronico</label>
+                    <input type="email" id="mail" name="mail" placeholder="Mail@mail.com">
+                    <label for="consulta">Escribe tu consulta</label>
+                    <textarea name="consulta" id="consulta" cols="20" rows="5"
+                        placeholder="Escribe aqui en que te podemos ayudar!"></textarea>
+                    <label for="noticias" class="contenedorCheckbox">Quieres que te enviemos noticias sobre nuestros
+                        proximos
+                        viajes y rodadas?
+                        <input class="checkbox" type="checkbox" name="noticias" id="" value="Si">
+                    </label>
+                    <!-------Botones------->
+                    <div class="contenedorBotones">
+                        <div class="enviarLimpiar">
+                            <input type="submit" value="Enviar formulario">
+                            <input type="reset" value="Limpiar formulario">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-------Pie de página------->
+    <footer id="pie">
+        <div class="logoFooter">
+            <a href="index.html">
+                <img src="../img/LogoPNG.png" alt="Logo Servittel">
+            </a>
+            <h1> SERVITTEL RENT</h1>
+        </div>
+        <p class="textoFooter">Todos los derechos reservados :) Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Aperiam
+            molestiae obcaecati dolores tempora. Harum, commodi? ©</p>
+        <p class="textoFooterDer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, pariatur? Lorem ipsum
+            dolor sit amet consectetur. ©</p>
+        <p class="textoFooter2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, vero? ©</p>
+        <div class="redesFooter">
+            <p>Contactanos!</p>
+            <div class="imagenesFooter">
+                <a href="https://www.facebook.com/servittelrent" target="blank">
+                    <img src="../img/facebook.png" alt="facebook" id="facebook">
+                </a>
+                <a href="https://www.whatsapp.com/" target="blank">
+                    <img src="../img/whatsapp.png" alt="whatsapp" id="whatsapp">
+                </a>
+                <a href="https://www.instagram.com/servittel_rent/" target="blank">
+                    <img src="../img/instagram.png" alt="instagram" id="instagram">
+                </a>
+            </div>
+        </div>
+        <a href="#comienzo" class="accesoComienzo">Volver al comienzo</a>
+    </footer>
+    <!-------^Pie de página^------->
+
+</body>
+
+</html>
