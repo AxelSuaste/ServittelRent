@@ -38,9 +38,11 @@ footer,
 body {
     background-color: #1c1c21;
 }
-
+body {
+    line-height: 1.25;
+}
 p {
-    font-family: "Minion Pro";
+    font-family: "Minion Pro" !important;
     text-align: center;
     margin: 1%;
 }
@@ -59,11 +61,21 @@ h2 {
     border-top: 2px solid whitesmoke;
     width: 95%;
     margin: 0 auto;
+    color: whitesmoke;
+}
+
+a {
+    color: #55578a;
+}
+
+a:hover{
+    color: #4a4d90;
 }
 
 h3 {
     font-size: 2em;
     font-style: italic;
+    color: whitesmoke;
 }
 
 a {
@@ -108,7 +120,8 @@ ul {
     position: relative;
     width: 75%;
     margin: 0 auto;
-    padding: .75em;
+    padding: .75vw;
+    align-self: center;
 }
 
 .imagen {
@@ -131,7 +144,7 @@ ul {
 }
 
 .imagenTexto p {
-    font-family: "Dancing Script";
+    font-family: "Dancing Script"!important;
     font-size: 1.5rem;
 }
 
@@ -141,7 +154,7 @@ ul {
     bottom: 100%;
     left: 0;
     right: 0;
-    background-color: #008CBA;
+    background-color: #4a4d90;
     overflow: hidden;
     width: 100%;
     height: 0;
@@ -160,7 +173,7 @@ ul {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #008CBA;
+    background-color: #4a4d90;
     overflow: hidden;
     width: 0;
     height: 100%;
@@ -324,7 +337,7 @@ a.accesoComienzo {
     align-self: flex-end;
     vertical-align: bottom;
     font-family: "Minion Pro Semibold";
-    font-size: 110%;
+    font-size: 4vw;
     margin-bottom: 1%;
     margin-right: 1%;
 }
@@ -373,7 +386,6 @@ div.introduccion {
 
 /*--------------------NOVEDADES INDEX-------------------- */
 
-/*nada xd*/
 
 /*--------------------^NOVEDADES INDEX^-------------------- */
 
@@ -385,6 +397,9 @@ div.introduccion {
     font-size: 1.25em;
 }
 
+ul {
+    padding-left: 0;
+}
 /*--------------------^SOBRE NOSOTROS INDEX^-------------------- */
 
 /*--------------------CONTACTO INDEX-------------------- */
@@ -525,7 +540,7 @@ input:focus {
 }
 
 .contactoRedes p {
-    font-family: fantasy;
+    font-family: fantasy !important;
     padding-left: 0.25em;
     letter-spacing: 0.2em;
     font-size: 1.4em;
@@ -699,7 +714,7 @@ input:focus {
     /*--------------------PAGINA CONTACTO--------------------*/
 
     .contactoRedes {
-        width: 55%;
+        width: 60%;
     }
 
     .contactoRedes div {
@@ -802,6 +817,9 @@ input:focus {
         width: auto;
     }
 
+    a.accesoComienzo {
+        font-size: 2vw;
+    }
     /*--------------------^FOOTER^--------------------*/
 
     /*--------------------INDEX--------------------*/
@@ -937,6 +955,10 @@ input:focus {
         width: 50%;
     }
 
+    .novedades .imagenContenedor.vanVertical .imagenTexto {
+        font-size: 2vw;
+    }
+
     .novedades ul {
         width: 50%;
     }
@@ -1037,7 +1059,7 @@ input:focus {
     /*--------------------^FOOTER^--------------------*/
     /*--------------------INTRODUCCION INDEX--------------------*/
     p.introduccion {
-        font-size: 1.75vw;
+        font-size: 2vw;
         letter-spacing: 0.1vw;
     }
 
