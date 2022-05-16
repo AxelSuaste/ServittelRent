@@ -8,9 +8,10 @@
     <title>Novedades. Servittel Rent</title>
     <link rel="shortcut icon" href="../img/LogoPNG.png">
     <!-- Animadores -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Bootstrap y css-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
 
 </head>
@@ -64,7 +65,7 @@
                 </div>
                 <!-------Lista de novedades------->
                 <ul>
-                    <div class="lista listaDisplay">    
+                    <div class="lista listaDisplay">
                         <li>Rodada a Teotihuacan</li>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In molestias accusamus sint fugit
                             iste,
@@ -108,19 +109,139 @@
             </div>
             <!-------^Novedades mayormente explicadas^------->
 
-            <!-------Calendario con fechas de viajes y eventos (Futuro)------->
-            <h2>Calendario</h2>
-            <p>Algun dia habra aqui un calendario profe, lo juro</p>
-            <div class="imagenContenedor">
-                <img src="https://www.ciclofanaticos.com/wp-content/uploads/2021/11/calendario-de-ciclismo-2022-WEB.jpg"
-                    alt="CalendarioProvicional" class="imagen">
-                <div class="imagenOverlay">
-                    <div class="imagenTexto">
-                        <p>¡Pronto profe, pronto!</p>
+            <!-------fechas de viajes y eventos (Futuro)------->
+            <h2>Fechas</h2>
+            <!-- Carrusel -->
+            <div class="carrusel">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
                     </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../img/vanAtardecer.jpg" class="d-block w-100" alt="Atardecer con Servittel">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Ven a viajar con nosotros!</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/Vans.jpg" class="d-block w-100" alt="Vans de servittel">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>La mejor calidad y trato!</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/vanHorizontal2.jpeg" class="d-block w-100" alt="Servittel Rent">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Que esperas? Contactanos ahora!</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
-        </div>
+            <!-- ^Carrusel^ -->
+
+            <!-- Cartas -->
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                    <div class="col ">
+                        <div class="card">
+                            <img src="https://scontent.fmex2-1.fna.fbcdn.net/v/t39.30808-6/278615689_2209347175887958_9152818533960319170_n.jpg?_nc_cat=107&ccb=1-6&_nc_sid=a26aad&_nc_ohc=JT1FocPaBKMAX8j8D_C&_nc_ht=scontent.fmex2-1.fna&oh=00_AT-qeCi9i6xCdjn0Mq14IsPlrWtn8S2ZHeQjDFAZkPTKow&oe=62879C4B"
+                                class="card-img-top" alt="Oaxaca">
+                            <div class="card-body">
+                                <h5 class="card-title">Viaje a...</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">17/10/2016</h6>
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, facilis.</p>
+                                <a href="https://web.whatsapp.com/" target="blank" class="btn btn-primary">Mas
+                                    información :D</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://scontent.fmex2-1.fna.fbcdn.net/v/t39.30808-6/278775835_2207665106056165_4510467654083683520_n.jpg?_nc_cat=105&ccb=1-6&_nc_sid=a26aad&_nc_ohc=9YLsWH-vsJ0AX9qzTfL&tn=iu00y5qfX2KH9_zd&_nc_ht=scontent.fmex2-1.fna&oh=00_AT8L3ofNOp0T1hfdoOvk3rPkWtLqFNpyKaFHmsIKo5fKeg&oe=62874F04"
+                                class="card-img-top" alt="Hola :)">
+                            <div class="card-body">
+                                <h5 class="card-title">Viaje a...</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">17/10/2016</h6>
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, facilis.</p>
+                                <a href="https://web.whatsapp.com/" target="blank" class="btn btn-primary">Mas
+                                    información :D</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://scontent.fmex2-1.fna.fbcdn.net/v/t39.30808-6/278775835_2207665106056165_4510467654083683520_n.jpg?_nc_cat=105&ccb=1-6&_nc_sid=a26aad&_nc_ohc=9YLsWH-vsJ0AX9qzTfL&tn=iu00y5qfX2KH9_zd&_nc_ht=scontent.fmex2-1.fna&oh=00_AT8L3ofNOp0T1hfdoOvk3rPkWtLqFNpyKaFHmsIKo5fKeg&oe=62874F04"
+                                class="card-img-top" alt="Hola :)">
+                            <div class="card-body">
+                                <h5 class="card-title">Viaje a...</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">17/10/2016</h6>
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, facilis.</p>
+                                <a href="https://web.whatsapp.com/" target="blank" class="btn btn-primary">Mas
+                                    información :D</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="card">
+                            <img src="https://scontent.fmex2-1.fna.fbcdn.net/v/t39.30808-6/278615689_2209347175887958_9152818533960319170_n.jpg?_nc_cat=107&ccb=1-6&_nc_sid=a26aad&_nc_ohc=JT1FocPaBKMAX8j8D_C&_nc_ht=scontent.fmex2-1.fna&oh=00_AT-qeCi9i6xCdjn0Mq14IsPlrWtn8S2ZHeQjDFAZkPTKow&oe=62879C4B"
+                                class="card-img-top" alt="Oaxaca">
+                            <div class="card-body">
+                                <h5 class="card-title">Viaje a...</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">17/10/2016</h6>
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, facilis.</p>
+                                <a href="https://web.whatsapp.com/" target="blank" class="btn btn-primary">Mas
+                                    información :D</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="card">
+                            <img src="https://scontent.fmex2-1.fna.fbcdn.net/v/t39.30808-6/278615689_2209347175887958_9152818533960319170_n.jpg?_nc_cat=107&ccb=1-6&_nc_sid=a26aad&_nc_ohc=JT1FocPaBKMAX8j8D_C&_nc_ht=scontent.fmex2-1.fna&oh=00_AT-qeCi9i6xCdjn0Mq14IsPlrWtn8S2ZHeQjDFAZkPTKow&oe=62879C4B"
+                                class="card-img-top" alt="Oaxaca">
+                            <div class="card-body">
+                                <h5 class="card-title">Viaje a...</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">17/10/2016</h6>
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, facilis.</p>
+                                <a href="https://web.whatsapp.com/" target="blank" class="btn btn-primary">Mas
+                                    información :D</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://scontent.fmex2-1.fna.fbcdn.net/v/t39.30808-6/278775835_2207665106056165_4510467654083683520_n.jpg?_nc_cat=105&ccb=1-6&_nc_sid=a26aad&_nc_ohc=9YLsWH-vsJ0AX9qzTfL&tn=iu00y5qfX2KH9_zd&_nc_ht=scontent.fmex2-1.fna&oh=00_AT8L3ofNOp0T1hfdoOvk3rPkWtLqFNpyKaFHmsIKo5fKeg&oe=62874F04"
+                                class="card-img-top" alt="Hola :)">
+                            <div class="card-body">
+                                <h5 class="card-title">Viaje a...</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">17/10/2016</h6>
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, facilis.</p>
+                                <a href="https://web.whatsapp.com/" target="blank" class="btn btn-primary">Mas
+                                    información :D</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ^Cartas^ -->
+                </div>
     </main>
 
     <!-------Pie de página------->
@@ -134,7 +255,8 @@
         <p class="textoFooter">Todos los derechos reservados :) Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Aperiam
             molestiae obcaecati dolores tempora. Harum, commodi? ©</p>
-        <p class="textoFooterDer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, pariatur? Lorem ipsum dolor sit amet consectetur. ©</p>
+        <p class="textoFooterDer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, pariatur? Lorem ipsum
+            dolor sit amet consectetur. ©</p>
         <p class="textoFooter2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, vero? ©</p>
         <div class="redesFooter">
             <p>Contactanos!</p>
@@ -153,8 +275,10 @@
         <a href="#comienzo" class="accesoComienzo">Volver al comienzo</a>
     </footer>
     <!-------^Pie de página^------->
-<!-- js -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 
 
 </body>

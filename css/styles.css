@@ -200,7 +200,7 @@ ul {
     border-bottom: solid whitesmoke 1vh;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 3;
 
 }
 
@@ -438,7 +438,6 @@ textarea {
     justify-content: center;
     justify-items: center;
     background-color: #55578a;
-    /* Color cool Maybe usar mas :D */
     margin: 2%;
     cursor: pointer;
     color: whitesmoke;
@@ -513,6 +512,31 @@ input:focus {
     margin-bottom: 1em;
 }
 
+.carrusel {
+    display: none;
+    visibility: hidden;
+}
+
+.row {
+    justify-content: space-evenly;
+}
+.col {
+    margin: 1vw 0;
+    justify-content: center;
+    width: auto;
+}
+
+.card {
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(74,77,144,1) 100%);
+    width: 18rem;
+    border-radius: 1em;
+}
+
+.card img {
+    padding: 1vw;
+    padding-bottom: 0;
+    border-radius: 6vw;
+}
 /*--------------------^NOVEDADES^-------------------- */
 
 /*--------------------SOBRE NOSOTROS-------------------- */
@@ -602,6 +626,13 @@ input:focus {
     /*--------------------PAGINA NOVEDAEDS--------------------*/
     .novedades .imagenContenedor.vanVertical {
         width: 50%;
+    }
+
+    .carrusel {
+        display:block;
+        visibility: visible;
+        width: 90%;
+        margin: 0 auto;
     }
 
     /*--------------------^PAGINA NOVEDAEDS^--------------------*/
@@ -707,6 +738,14 @@ input:focus {
     .novedades .imagenContenedor.vanVertical {
         width: 40%;
         order: 1;
+    }
+
+    .card {
+        width: 24rem;
+    }
+
+    .card img {
+        border-radius: 2vw;
     }
 
     /*--------------------^PAGINA NOVEDADES^--------------------*/
@@ -874,6 +913,10 @@ input:focus {
         width: 60%;
     }
 
+    .card {
+        width: 16rem;
+    }
+
     /*--------------------^NOVEDADES INDEX^--------------------*/
 
     /*--------------------^INDEX^--------------------*/
@@ -951,16 +994,23 @@ input:focus {
         display: flex
     }
 
+    .proximosEventos .listaDisplay p {
+        font-size: 1.50vw;
+    }
+
+    .novedades ul {
+        width: 60%;
+    }
     .novedades .imagenContenedor.vanVertical {
-        width: 50%;
+        width: 40%;
     }
 
     .novedades .imagenContenedor.vanVertical .imagenTexto {
         font-size: 2vw;
     }
 
-    .novedades ul {
-        width: 50%;
+    .carrusel {
+        width: 80%;
     }
 
     /*--------------------^NOVEDAES PAGINA^--------------------*/
@@ -1086,6 +1136,10 @@ input:focus {
         width: 50%;
     }
 
+    .card {
+        width: 18rem;
+    }
+
     /*--------------------^NOVEDADES INDEX^--------------------*/
 
     /*--------------------CONTACTO INDEX--------------------*/
@@ -1108,7 +1162,19 @@ input:focus {
 
     /*--------------------NOVEDADES PAGINA--------------------*/
     .proximosEventos .listaDisplay p {
-        font-size: 1.55vw;
+        font-size: 1.50vw;
+    }
+
+    .novedades ul {
+        width: 60%;
+    }
+    .novedades .imagenContenedor.vanVertical {
+        width: 40%;
+    }
+
+
+    .carrusel {
+        width: 70%;
     }
 
     /*--------------------^NOVEDADES PAGINA^--------------------*/
