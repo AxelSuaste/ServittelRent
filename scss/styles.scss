@@ -1,0 +1,871 @@
+@import "footer";
+@import "header";
+@import "variables";
+
+/*--------------------MOBILE FIRST - 320px--------------------*/
+/*--------------------GENERALES--------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $blancoTexto;
+}
+
+/*--------------------FUENTES--------------------*/
+/*--------------------FUENTE DE TITULOS--------------------*/
+@font-face {
+    font-family: "Bebas Neue";
+    src: url(../fonts/BebasNeue-Regular.ttf);
+}
+
+/*------------FUENTE CURSIVA PARA IMAGENES Y COSAS LINDAS XD------------*/
+@font-face {
+    font-family: "Dancing Script";
+    src: url(../fonts/DancingScript-VariableFont_wght.ttf);
+}
+
+/*--------------------FUENTE DE TEXTOS IMPORTANTES-------------------*/
+@font-face {
+    font-family: "Minion Pro Semibold";
+    src: url(../fonts/MinionPro-Semibold.ttf);
+}
+
+/*--------------------FUENTE DE RESTO DE TEXTOS--------------------*/
+@font-face {
+    font-family: "Minion Pro";
+    src: url(../fonts/MinionPro-Regular.ttf);
+}
+
+/*--------------------^FUENTES^--------------------*/
+header,
+footer,
+body {
+    background-color: $grisFondo;
+}
+
+body {
+    line-height: 1.25;
+}
+
+p {
+    font-family: $fuenteTexto !important;
+    text-align: center;
+    margin: 1%;
+}
+
+h1,
+h2,
+h3 {
+    font-family: $fuenteTitulo;
+    text-align: center;
+}
+
+h2 {
+    font-size: 4rem;
+    font-style: italic;
+    letter-spacing: 0.5rem;
+    border-top: 2px solid $blancoTexto;
+    width: 95%;
+    margin: 0 auto;
+    color: $blancoTexto;
+}
+
+a {
+    color: $morado;
+}
+
+a:hover {
+    color: #4a4d90;
+}
+
+h3 {
+    font-size: 2em;
+    font-style: italic;
+    color: $blancoTexto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.resaltado {
+    font-family: $fuenteTextoImportante;
+    font-style: italic;
+    font-size: 1.25em;
+}
+
+.lista {
+    li {
+        color: $grisFondo;
+        background-color: $blancoTexto;
+        font-family: $fuenteTextoLindo;
+        font-style: italic;
+    }
+}
+
+.listaDisplay {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    li {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 4vw;
+        border-bottom: 5px dotted $blancoTexto;
+        margin: 1em;
+    }
+}
+
+
+/*--------------------IMAGENES-------------------- */
+.imagenContenedor {
+    position: relative;
+    width: 75%;
+    margin: 0 auto;
+    padding: .75vw;
+    align-self: center;
+}
+
+.imagen {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 5%;
+}
+
+.imagenTexto {
+    white-space: nowrap;
+    color: white;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background: none;
+
+    p {
+        font-family: $fuenteTextoLindo !important;
+        font-size: 1.5rem;
+    }
+}
+
+/* Animacion 1 */
+.imagenOverlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #4a4d90;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    border-radius: 5%;
+}
+
+.imagenContenedor:hover .imagenOverlay {
+    bottom: 0;
+    height: 100%;
+}
+
+/* Animacion 2 */
+.imagenOverlay2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #4a4d90;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+    border-radius: 5%;
+}
+
+.imagenContenedor:hover .imagenOverlay2 {
+    width: 100%;
+}
+
+/*--------------------^IMAGENES^-------------------- */
+
+/*--------------------^GENERALES^--------------------*/
+
+/*--------------------MAIN INDEX-------------------- */
+/*--------------------INTRODUCCION INDEX-------------------- */
+div.introduccion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.instagramMedia {
+    background: black;
+    height: 350px;
+    border-radius: 3px;
+    border: 1px solid rgb(219, 219, 219);
+    display: block;
+    margin: 1%;
+    padding: 0px;
+    justify-self: center;
+}
+
+/*--------------------^INTRODUCCION INDEX^-------------------- */
+
+/*--------------------NOVEDADES INDEX-------------------- */
+
+
+/*--------------------^NOVEDADES INDEX^-------------------- */
+
+/*--------------------SOBRE NOSOTROS INDEX-------------------- */
+
+
+.listaDisplay p.resaltado {
+    border-bottom: none;
+    font-size: 1.25em;
+}
+
+ul {
+    padding-left: 0;
+}
+
+/*--------------------^SOBRE NOSOTROS INDEX^-------------------- */
+
+/*--------------------CONTACTO INDEX-------------------- */
+.redes {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+
+    a {
+        width: 10vw;
+    }
+
+    img {
+        width: 100%;
+    }
+
+}
+
+.formulario {
+    border-radius: 0.5em;
+    background-color: #262729;
+    padding: 1em;
+}
+
+input,
+textarea {
+    color: $grisFondo;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
+    padding: 1% 2%;
+    margin: 1% 0%;
+    box-sizing: border-box;
+    justify-items: center;
+}
+
+.enviarLimpiar input {
+    justify-content: center;
+    justify-items: center;
+    background-color: $morado;
+    margin: 2%;
+    cursor: pointer;
+    color: $blancoTexto;
+}
+
+input {
+    &[type="submit"] {
+        display: block;
+        width: 80%;
+        margin: 1rem auto;
+    }
+
+    &[type="reset"] {
+        display: block;
+        width: 55%;
+        margin: 1rem auto;
+    }
+
+    &.checkbox {
+        height: 2.5em;
+    }
+
+    &:focus {
+        border: 5px solid #555;
+    }
+
+}
+
+.contenedorCheckbox {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: center;
+    cursor: pointer;
+    font-size: 1em;
+
+    input {
+        position: relative;
+        cursor: pointer;
+    }
+}
+
+/*--------------------^CONTACTO INDEX^-------------------- */
+
+
+/*--------------------PAGINAS-------------------- */
+/*--------------------PAGINAS-------------------- */
+/*--------------------PAGINAS-------------------- */
+.pagina {
+
+    h2 {
+        font-size: 2.5em;
+        border-top: none;
+    }
+
+    h1 {
+        display: block;
+        font-size: 4em;
+        letter-spacing: 0.1em;
+    }
+}
+
+/*--------------------SERVICIOS-------------------- */
+.servicios p {
+    margin: 1em;
+    font-size: 1.25em;
+}
+
+/*--------------------^SERVICIOS^-------------------- */
+
+/*--------------------NOVEDADES-------------------- */
+.novedades {
+    .imagenTexto p {
+        font-size: 1.25em;
+    }
+
+    .imagenContenedor {
+        margin-bottom: 1em;
+    }
+}
+
+.carrusel {
+    display: none;
+    visibility: hidden;
+}
+
+.row {
+    justify-content: space-evenly;
+}
+
+.col {
+    margin: 1vw 0;
+    justify-content: center;
+    width: auto;
+}
+
+.card {
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(74, 77, 144, 1) 100%);
+    width: 18rem;
+    border-radius: 1em;
+
+    img {
+        padding: 1vw;
+        padding-bottom: 0;
+        border-radius: 6vw;
+    }
+}
+
+/*--------------------^NOVEDADES^-------------------- */
+
+/*--------------------SOBRE NOSOTROS-------------------- */
+.sobreNosotros {
+    p.historia {
+        font-size: 1.25em;
+        border: 4px dashed $blancoTexto;
+        border-radius: 1em;
+        margin: 1em;
+        background-color: #55578a77;
+        padding: 0.25em;
+
+    }
+
+    ul p {
+        font-size: 1em;
+    }
+}
+
+/*--------------------^SOBRE NOSOTROS^-------------------- */
+
+/*--------------------CONTACTO-------------------- */
+
+.contactoRedes {
+    img {
+        width: 4em;
+
+    }
+
+    p {
+        font-family: fantasy !important;
+        padding-left: 0.25em;
+        letter-spacing: 0.2em;
+        font-size: 1.4em;
+    }
+
+    div {
+        margin: 0 auto;
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+    }
+}
+
+/*--------------------^CONTACTO^-------------------- */
+
+/*--------------------^PAGINAS^-------------------- */
+/*--------------------^PAGINAS^-------------------- */
+/*--------------------^PAGINAS^-------------------- */
+
+/*--------------------RESPONSIVE 480px--------------------*/
+/*--------------------RESPONSIVE 480px--------------------*/
+/*--------------------RESPONSIVE 480px--------------------*/
+
+
+@media screen and (min-width: 480px) {
+
+    /*--------------------PAGINA NOVEDAEDS--------------------*/
+    .novedades .imagenContenedor.vanVertical {
+        width: 50%;
+    }
+
+    .carrusel {
+        display: block;
+        visibility: visible;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /*--------------------^PAGINA NOVEDAEDS^--------------------*/
+
+    /*--------------------PAGINA CONTACTO--------------------*/
+
+    .contenedorRedes {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contactoRedes {
+        width: 65%;
+    }
+
+    /*--------------------^PAGINA CONTACTO^--------------------*/
+}
+
+/*--------------------^RESPONSIVE 480px^--------------------*/
+/*--------------------^RESPONSIVE 480px^--------------------*/
+/*--------------------^RESPONSIVE 480px^--------------------*/
+
+/*--------------------RESPONSIVE 600px--------------------*/
+/*--------------------RESPONSIVE 600px--------------------*/
+/*--------------------RESPONSIVE 600px--------------------*/
+
+@media screen and (min-width: 600px) {
+
+    /*--------------------SOBRE NOSOTROS INDEX--------------------*/
+    .listaDisplay p {
+        font-size: 3vw;
+    }
+
+    /*--------------------^SOBRE NOSOTROS INDEX^--------------------*/
+
+    /*--------------------PAGINA SERVICIOS--------------------*/
+    .serviciosCiclismo {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+
+        p {
+            width: 75%;
+            font-size: 1em;
+        }
+
+    }
+
+    .serviciosTurismo {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+
+        p {
+            width: 75%;
+            font-size: 1em;
+            order: -1;
+        }
+    }
+
+    /*--------------------^PAGINA SERVICIOS^--------------------*/
+
+    /*--------------------PAGINA NOVEDADES--------------------*/
+    .novedades .imagenContenedor.vanVertical {
+        width: 40%;
+        order: 1;
+    }
+
+    .card {
+        width: 24rem;
+
+        img {
+            border-radius: 2vw;
+        }
+    }
+
+    /*--------------------^PAGINA NOVEDADES^--------------------*/
+
+    /*--------------------PAGINA CONTACTO--------------------*/
+
+    .contactoRedes {
+        width: 60%;
+
+        div {
+            margin: 1em;
+        }
+    }
+
+    /*--------------------^PAGINA CONTACTO^--------------------*/
+
+}
+
+/*--------------------^RESPONSIVE 600px^--------------------*/
+/*--------------------^RESPONSIVE 600px^--------------------*/
+/*--------------------^RESPONSIVE 600px^--------------------*/
+
+/*--------------------RESPONSIVE 768px--------------------*/
+/*--------------------RESPONSIVE 768px--------------------*/
+/*--------------------RESPONSIVE 768px--------------------*/
+
+@media screen and (min-width: 768px) {
+    /*--------------------INDEX--------------------*/
+
+    /*--------------------INTRODUCCION INDEX--------------------*/
+    div.introduccion {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    p.introduccion {
+        font-size: 2.25vw;
+    }
+
+    /*--------------------^INTRODUCCION INDEX^--------------------*/
+
+    /*--------------------SERVICIOS INDEX--------------------*/
+    .turismoCiclismo {
+        overflow: hidden;
+    }
+
+    .contenido {
+        h3 {
+            font-size: 5vw;
+        }
+
+        p {
+            font-size: 2.5vw;
+        }
+    }
+
+    .izquierda {
+        float: left;
+        width: 50%;
+
+        .contenido {
+            border-right: 3px solid $blancoTexto;
+        }
+    }
+
+    .derecha {
+        float: right;
+        width: 50%;
+    }
+
+    /*--------------------^SERVICIOS INDEX^--------------------*/
+
+    /*--------------------NOVEDADES INDEX--------------------*/
+    .novedadesIndex {
+        display: flex;
+
+        p {
+            width: 60%;
+        }
+    }
+
+    .card {
+        width: 16rem;
+    }
+
+    /*--------------------^NOVEDADES INDEX^--------------------*/
+
+    /*--------------------^INDEX^--------------------*/
+
+    /*--------------------SERVICIOS PAGINA--------------------*/
+
+    .servicios p {
+        font-size: 2.25vw;
+    }
+
+    /*--------------------^SERVICIOS PAGINA^--------------------*/
+
+    /*--------------------NOVEDADES PAGINA--------------------*/
+    .novedades ul p {
+        font-size: 1em;
+    }
+
+    /*Profe aqui no tengo idea de como hacer para "partir" la lista estoy conforme con como quedo, pero mi idea era los dos primeros elementos li que fueran mas estrechos y a la derecha estuviera la imagen y los otros dos elementos li fueran del tamanio completo :(*/
+
+
+    /*--------------------^NOVEDADES PAGINA^--------------------*/
+
+    /*--------------------SOBRE NOSOTROS PAGINA--------------------*/
+    div.historiaContenedor {
+        display: flex;
+    }
+
+    div.VanConBicicletas {
+        width: 40%;
+        margin: 1em;
+    }
+
+    .sobreNosotros p.historia {
+        width: 60%;
+        font-size: 1em;
+    }
+
+    /*--------------------^SOBRE NOSOTROS PAGINA^--------------------*/
+
+    /*--------------------CONTACTO PAGINA--------------------*/
+    .contactoRedes {
+        width: 45%;
+    }
+
+    /*--------------------^CONTACTO PAGINA^--------------------*/
+}
+
+/*--------------------^RESPONSIVE 768px^--------------------*/
+/*--------------------^RESPONSIVE 768px^--------------------*/
+/*--------------------^RESPONSIVE 768px^--------------------*/
+
+/*--------------------RESPONSIVE 1024px--------------------*/
+/*--------------------RESPONSIVE 1024px--------------------*/
+/*--------------------RESPONSIVE 1024px--------------------*/
+
+@media screen and (min-width: 1024px) {
+
+    /*--------------------NOVEDADES INDEX--------------------*/
+    .novedadesIndex p {
+        font-size: 1.25em;
+    }
+
+    /*--------------------^NOVEDADES INDEX^--------------------*/
+
+    /*--------------------SOBRE NOSOTROS INDEX--------------------*/
+    #index div.listaDisplay p {
+        font-size: 2vw;
+    }
+
+    /*--------------------^SOBRE NOSOTROS INDEX^--------------------*/
+
+    /*--------------------NOVEDAES PAGINA--------------------*/
+
+    .proximosEventos {
+        display: flex;
+
+        .listaDisplay p {
+            font-size: 1.50vw;
+        }
+    }
+
+    .novedades {
+        ul {
+            width: 60%;
+        }
+
+        .imagenContenedor.vanVertical {
+            width: 40%;
+
+            .imagenTexto {
+                font-size: 2vw;
+            }
+        }
+    }
+
+    .carrusel {
+        width: 80%;
+    }
+
+    /*--------------------^NOVEDAES PAGINA^--------------------*/
+
+    /*--------------------SOBRE NOSOTROS PAGINA--------------------*/
+    .sobreNosotros p.historia {
+        font-size: 2vw;
+    }
+
+    .FAQ div p {
+        font-size: 2vw;
+    }
+
+    /*--------------------^SOBRE NOSOTROS PAGINA^--------------------*/
+
+    /*--------------------CONTACTO PAGINA--------------------*/
+    .contactoRedes {
+        width: 35%;
+    }
+
+    /*--------------------^CONTACTO PAGINA^--------------------*/
+
+}
+
+/*--------------------^RESPONSIVE 1024px^--------------------*/
+/*--------------------^RESPONSIVE 1024px^--------------------*/
+/*--------------------^RESPONSIVE 1024px^--------------------*/
+
+/*--------------------RESPONSIVE 1200px--------------------*/
+/*--------------------RESPONSIVE 1200px--------------------*/
+/*--------------------RESPONSIVE 1200px--------------------*/
+
+@media screen and (min-width: 1200px) {
+
+    /*--------------------GENERALES--------------------*/
+    .formulario {
+        margin: 1em;
+    }
+
+    ul {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /*--------------------^GENERALES^--------------------*/
+
+    /*--------------------INTRODUCCION INDEX--------------------*/
+    p.introduccion {
+        font-size: 2vw;
+        letter-spacing: 0.1vw;
+    }
+
+    /*--------------------^INTRODUCCION INDEX^--------------------*/
+
+    /*--------------------SERVICIOS INDEX--------------------*/
+    .turismoCiclismo {
+        h3 {
+            font-size: 4vw;
+        }
+
+        p {
+            font-size: 2vw;
+        }
+    }
+
+    /*^--------------------SERVICIOS INDEX--------------------^*/
+
+    /*--------------------NOVEDADES INDEX--------------------*/
+    .novedadesIndex {
+        p {
+            font-size: 1.8vw;
+            letter-spacing: 0.1vw;
+        }
+
+        .imagenContenedor {
+            width: 50%;
+        }
+    }
+
+    .card {
+        width: 18rem;
+    }
+
+    /*--------------------^NOVEDADES INDEX^--------------------*/
+
+    /*--------------------CONTACTO INDEX--------------------*/
+    .redes img {
+        width: 70%;
+    }
+
+    /*--------------------^CONTACTO INDEX^--------------------*/
+
+    /*--------------------SERVICIOS PAGINA--------------------*/
+    .servicios {
+        .imagenContenedor {
+            width: 40%;
+        }
+
+        p {
+            font-size: 2vw;
+        }
+    }
+
+    /*--------------------SERVICIOS PAGINA--------------------*/
+
+    /*--------------------NOVEDADES PAGINA--------------------*/
+    .proximosEventos .listaDisplay p {
+        font-size: 1.50vw;
+    }
+
+    .novedades {
+        ul {
+            width: 60%;
+        }
+
+        .imagenContenedor.vanVertical {
+            width: 40%;
+        }
+    }
+
+    .carrusel {
+        width: 70%;
+    }
+
+    /*--------------------^NOVEDADES PAGINA^--------------------*/
+
+    /*--------------------SOBRE NOSOTROS PAGINA--------------------*/
+    .FAQ {
+        width: 75%;
+        margin: 0 auto;
+
+        .listaDisplay {
+            p {
+                font-size: 2vw;
+            }
+        }
+    }
+
+    /*--------------------^SOBRE NOSOTROS PAGINA^--------------------*/
+
+    /*--------------------CONTACTO PAGINA--------------------*/
+    .contactoRedes {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        p {
+            font-size: 2.5vw;
+        }
+    }
+
+    /*--------------------^CONTACTO PAGINA^--------------------*/
+
+}
+
+/*--------------------^RESPONSIVE 1200px^--------------------*/
+/*--------------------^RESPONSIVE 1200px^--------------------*/
+/*--------------------^RESPONSIVE 1200px^--------------------*/

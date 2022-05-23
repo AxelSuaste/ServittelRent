@@ -1,0 +1,236 @@
+@import "variables";
+
+/*--------------------FOOTER MOBILE FIRST--------------------*/
+footer {
+    border-top: 3px solid $blancoTexto;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "textoFooter redesFooter"
+        "textoFooter accesoComienzo";
+    align-items: center;
+    justify-items: center;
+    margin: 0.5em;
+
+}
+
+p.textoFooter {
+    grid-area: textoFooter;
+    font-family: $fuenteTextoImportante;
+    font-size: 0.75em;
+    align-self: flex-start;
+}
+
+div.redesFooter {
+    grid-area: redesFooter;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: top;
+    align-content: top;
+}
+
+div.imagenesFooter {
+    text-align: center;
+    width: 100%;
+
+    img {
+        text-align: center;
+        width: 25%;
+        max-width: 50px;
+    }
+}
+
+a.accesoComienzo {
+    grid-area: accesoComienzo;
+    background-color: $blancoTexto;
+    color: $grisFondo;
+    display: flex;
+    justify-self: end;
+    align-self: flex-end;
+    vertical-align: bottom;
+    font-family: $fuenteTextoImportante;
+    font-size: 4vw;
+    margin-bottom: 1%;
+    margin-right: 1%;
+}
+
+.logoFooter {
+    grid-area: logoFooter;
+    display: none;
+    visibility: hidden;
+}
+
+.textoFooter2 {
+    grid-area: textoFooter2;
+    display: none;
+    visibility: hidden;
+}
+
+.textoFooterDer {
+    visibility: hidden;
+    display: none;
+}
+
+/*--------------------^FOOTER MOBILE FIRST^--------------------*/
+
+/*--------------------FOOTER 480PX--------------------*/
+@media screen and (min-width: 480px) {
+
+
+    footer {
+        grid-template-areas:
+            "textoFooter redesFooter"
+            "logoFooter accesoComienzo";
+    }
+
+    .logoFooter {
+        visibility: visible;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+            max-width: 75px;
+        }
+
+        a {
+            width: 25%;
+        }
+
+    }
+
+}
+
+/*--------------------^FOOTER 480PX^--------------------*/
+
+/*--------------------FOOTER 600PX--------------------*/
+@media screen and (min-width: 600px) {
+    footer {
+        grid-template-areas:
+            "textoFooter redesFooter"
+            "logoFooter textoFooter2"
+            "logoFooter accesoComienzo";
+        grid-template-columns: 3fr 2fr;
+        grid-template-rows: 2fr 1fr 0.5fr;
+    }
+
+    div.imagenesFooter img {
+        width: 20%;
+    }
+
+    .logoFooter {
+        h1 {
+            padding: 0.5em;
+
+        }
+
+        img {
+            width: 100%;
+        }
+
+        a {
+            width: 25%;
+        }
+
+    }
+
+    p.textoFooter {
+        font-size: 1em;
+    }
+
+    .textoFooter2 {
+        font-size: 0.75em;
+        display: flex;
+        visibility: visible;
+        align-items: top;
+    }
+
+}
+
+/*--------------------^FOOTER 600PX^--------------------*/
+
+/*--------------------FOOTER 768PX--------------------*/
+@media screen and (min-width: 768px) {
+    footer {
+        grid-template-areas:
+            "logoFooter textoFooter redesFooter"
+            "logoFooter textoFooter textoFooter2"
+            "logoFooter textoFooter accesoComienzo";
+        grid-template-columns: 1fr 2fr 2fr;
+    }
+
+    div.imagenesFooter img {
+        width: 20%;
+    }
+
+    .logoFooter {
+        h1 {
+            padding: 0;
+            font-size: 1.5em;
+        }
+
+        img {
+            width: 7em;
+        }
+
+        a {
+            width: auto;
+        }
+    }
+
+    a.accesoComienzo {
+        font-size: 2vw;
+    }
+
+}
+
+/*--------------------^FOOTER 768PX^--------------------*/
+
+/*--------------------FOOTER 1200PX--------------------*/
+@media screen and (min-width: 1200px) {
+    footer {
+        grid-template-areas:
+            "logoFooter textoFooterIzq textoFooterDer redesFooter"
+            "logoFooter textoFooterIzq textoFooterDer textoFooter2"
+            "logoFooter textoFooterIzq textoFooterDer accesoComienzo";
+        grid-template-columns: 1fr 1fr 1fr 2fr;
+
+        p.textoFooter {
+            grid-area: textoFooterIzq;
+        }
+
+        p.textoFooterDer {
+            display: flex;
+            visibility: visible;
+            grid-area: textoFooterDer;
+            align-self: flex-start;
+        }
+    }
+
+    div.imagenesFooter img {
+        margin: 0 1em 0 1em;
+    }
+
+    .logoFooter {
+        h1 {
+            padding: 0;
+            font-size: 2.5vw;
+        }
+
+        img {
+            width: 8vw;
+            max-width: none;
+        }
+
+        a {
+            width: auto;
+        }
+    }
+}
+
+/*--------------------^FOOTER 1200PX^--------------------*/

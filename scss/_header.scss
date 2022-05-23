@@ -1,0 +1,165 @@
+@import "variables";
+
+/*--------------------HEADER MOBILE FIRST--------------------*/
+.headerPrincipal {
+    background-color: $grisFondo;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    border-bottom: solid $blancoTexto 1vh;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+
+}
+
+.logo {
+    margin: 0.5em;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        font-family: $fuenteTitulo;
+        letter-spacing: 1vw;
+        justify-self: center;
+        justify-items: center;
+        font-size: 10vw;
+    }
+
+    img {
+        max-width: 80px;
+        min-width: 60px;
+        width: 15vw;
+        margin-right: 1em;
+    }
+
+}
+
+
+.barraNavegacion .menuLista {
+    display: none;
+}
+
+.menuBoton {
+    box-sizing: border-box;
+    display: block;
+    color: $blancoTexto;
+    margin: 1vh;
+    height: 8vh;
+    width: 8vh;
+    border-radius: 5px;
+    line-height: 8vh;
+    text-align: center;
+    font-weight: bold;
+    user-select: none;
+    background: url('https://api.iconify.design/bx/menu-alt-right.svg?color=whitesmoke') no-repeat center center / contain;
+}
+
+.barraNavegacion input:checked~.menuBoton {
+    background: rgba(232, 232, 232, 0.768);
+    color: $grisFondo;
+    border-color: $grisFondo;
+    background: url('https://api.iconify.design/bx/menu-alt-right.svg?color=whitesmoke') no-repeat center center / contain;
+}
+
+.barraNavegacion input:checked~.menuLista {
+    display: block;
+    position: fixed;
+    top: 15vh;
+    right: 1vw;
+    background-color: #1c1c21be;
+}
+
+#menuCheck {
+    display: none;
+}
+
+.menuItem {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px solid $blancoTexto;
+
+    &:hover {
+        filter: brightness(120%);
+    }
+
+    a {
+        text-decoration: none;
+        color: $blancoTexto;
+        font-family: $fuenteTextoImportante;
+    }
+}
+
+/*--------------------^HEADER MOBILE FIRST^--------------------*/
+
+/*--------------------HEADER 768px--------------------*/
+@media screen and (min-width: 768px) {
+    .logo h1 {
+        font-size: 5vw;
+    }
+
+    .barraNavegacion {
+        width: 50%;
+
+        input,
+        label {
+            display: none;
+            visibility: hidden;
+        }
+
+        .menuLista {
+            display: flex;
+        }
+    }
+
+    .menuLista {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: end;
+
+        li {
+            /*         padding: 0.5%; */
+            margin: 0 auto;
+            font-size: 2vw;
+        }
+
+        a {
+            color: $grisFondo;
+            background-color: $blancoTexto;
+        }
+    }
+
+    a.accesoPie {
+        background-color: bisque;
+        text-align: top;
+        vertical-align: top;
+    }
+
+    .menuItem {
+        border-bottom: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*--------------------^HEADER 768px^--------------------*/
+
+/*--------------------HEADER 1200px--------------------*/
+@media screen and (min-width:1200px) {
+    .menuLista li {
+        margin: 0 auto;
+        font-size: 1.5vw;
+    }
+}
+
+/*--------------------^HEADER 1200px^--------------------*/
