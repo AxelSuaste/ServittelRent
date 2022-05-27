@@ -55,12 +55,14 @@ p {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     font-family: $fuenteTitulo;
     text-align: center;
 }
 
-h2 {
+h3 {
+    /* Bien */
     font-size: 4rem;
     font-style: italic;
     letter-spacing: 0.5rem;
@@ -78,7 +80,8 @@ a:hover {
     color: #4a4d90;
 }
 
-h3 {
+h4 {
+    /* Bien */
     font-size: 2em;
     font-style: italic;
     color: $blancoTexto;
@@ -326,12 +329,14 @@ input {
 /*--------------------PAGINAS-------------------- */
 .pagina {
 
-    h2 {
+
+
+    h3 {
         font-size: 2.5em;
         border-top: none;
     }
 
-    h1 {
+    h2 {
         display: block;
         font-size: 4em;
         letter-spacing: 0.1em;
@@ -443,7 +448,6 @@ input {
 
 
 @media screen and (min-width: 480px) {
-
     /*--------------------PAGINA NOVEDAEDS--------------------*/
     .novedades .imagenContenedor.vanVertical {
         width: 50%;
@@ -575,7 +579,7 @@ input {
     }
 
     .contenido {
-        h3 {
+        h4 {
             font-size: 5vw;
         }
 
@@ -629,9 +633,6 @@ input {
     .novedades ul p {
         font-size: 1em;
     }
-
-    /*Profe aqui no tengo idea de como hacer para "partir" la lista estoy conforme con como quedo, pero mi idea era los dos primeros elementos li que fueran mas estrechos y a la derecha estuviera la imagen y los otros dos elementos li fueran del tamanio completo :(*/
-
 
     /*--------------------^NOVEDADES PAGINA^--------------------*/
 
@@ -766,7 +767,7 @@ input {
 
     /*--------------------SERVICIOS INDEX--------------------*/
     .turismoCiclismo {
-        h3 {
+        h4 {
             font-size: 4vw;
         }
 
