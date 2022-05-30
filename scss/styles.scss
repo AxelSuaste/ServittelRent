@@ -1,6 +1,7 @@
 @import "footer";
 @import "header";
 @import "variables";
+@import "mixins";
 
 /*--------------------MOBILE FIRST - 320px--------------------*/
 /*--------------------GENERALES--------------------*/
@@ -53,16 +54,13 @@ p {
     margin: 1%;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1 {
     font-family: $fuenteTitulo;
     text-align: center;
 }
 
 h3 {
-    /* Bien */
+    @extend h1;
     font-size: 4rem;
     font-style: italic;
     letter-spacing: 0.5rem;
@@ -81,7 +79,7 @@ a:hover {
 }
 
 h4 {
-    /* Bien */
+    @extend h1;
     font-size: 2em;
     font-style: italic;
     color: $blancoTexto;
@@ -111,8 +109,7 @@ ul {
 }
 
 .listaDisplay {
-    display: flex;
-    flex-wrap: wrap;
+    @include flex;
     justify-content: center;
 
     li {
@@ -204,8 +201,7 @@ ul {
 /*--------------------MAIN INDEX-------------------- */
 /*--------------------INTRODUCCION INDEX-------------------- */
 div.introduccion {
-    display: flex;
-    flex-wrap: wrap;
+    @include flex;
     justify-content: center;
 }
 
@@ -308,8 +304,7 @@ input {
 
 .contenedorCheckbox {
     text-align: center;
-    display: flex;
-    flex-wrap: wrap;
+    @include flex;
     align-items: center;
     justify-items: center;
     cursor: pointer;
@@ -337,6 +332,7 @@ input {
     }
 
     h2 {
+        @extend h1;
         display: block;
         font-size: 4em;
         letter-spacing: 0.1em;
@@ -448,6 +444,7 @@ input {
 
 
 @media screen and (min-width: 480px) {
+
     /*--------------------PAGINA NOVEDAEDS--------------------*/
     .novedades .imagenContenedor.vanVertical {
         width: 50%;
@@ -854,8 +851,7 @@ input {
     /*--------------------CONTACTO PAGINA--------------------*/
     .contactoRedes {
         width: 100%;
-        display: flex;
-        flex-wrap: wrap;
+        @include flex;
         justify-content: space-around;
 
         p {

@@ -161,7 +161,7 @@ a.accesoComienzo {
   display: flex;
   align-items: center;
   justify-content: center; }
-  .logo h1 {
+  .logo h1, .logo h3, .logo h4, .logo .pagina h2, .pagina .logo h2 {
     font-family: "Bebas Neue";
     letter-spacing: 1vw;
     justify-self: center;
@@ -222,7 +222,7 @@ a.accesoComienzo {
 /*--------------------^HEADER MOBILE FIRST^--------------------*/
 /*--------------------HEADER 768px--------------------*/
 @media screen and (min-width: 768px) {
-  .logo h1 {
+  .logo h1, .logo h3, .logo h4, .logo .pagina h2, .pagina .logo h2 {
     font-size: 5vw; }
   .barraNavegacion {
     width: 50%; }
@@ -307,15 +307,11 @@ p {
   text-align: center;
   margin: 1%; }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h3, h4, .pagina h2 {
   font-family: "Bebas Neue";
   text-align: center; }
 
 h3 {
-  /* Bien */
   font-size: 4rem;
   font-style: italic;
   letter-spacing: 0.5rem;
@@ -331,7 +327,6 @@ a:hover {
   color: #4a4d90; }
 
 h4 {
-  /* Bien */
   font-size: 2em;
   font-style: italic;
   color: whitesmoke; }
